@@ -1,10 +1,12 @@
 from django.shortcuts import render
-
+def indexpage(request):
+    return render(request, 'index.html')
 
 
 
 def Homepage(request):
     return render(request, 'Home.html')
+
 
 
 def Aboutpage(request):
@@ -22,4 +24,7 @@ def Productpage(request):
 
 def Servicepage(request):
     return render(request, 'Services.html')
+
+
+
 
